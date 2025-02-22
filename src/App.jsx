@@ -7,7 +7,7 @@ const App = () => {
     const [search, setSearch] = useState("");
 
     useEffect(() => {
-        axios.get("http://13.59.119.233/users")
+        axios.get("http://18.116.51.8/users")
             .then(response => {
                 setUsers(response.data);
             })
