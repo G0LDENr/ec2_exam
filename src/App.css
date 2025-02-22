@@ -1,0 +1,129 @@
+/* Estilo para el título h2 */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Estilo general de la tabla */
+table {
+  width: 80%; /* Reducir el ancho para que no ocupe toda la pantalla */
+  max-width: 900px; /* Límite máximo de ancho */
+  margin: 20px auto; /* Centrar la tabla horizontalmente */
+  border-collapse: collapse;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Estilo de los encabezados de la tabla */
+th {
+  background-color: #62bb62;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 15px;
+}
+
+/* Estilo para las celdas */
+td {
+  padding: 15px;
+  text-align: center;
+  color: #333333;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+}
+
+/* Bordes y sombreados para filas alternas */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* Efecto hover en las filas */
+tbody tr:hover {
+  background-color: #e8f5e9;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo de los botones dentro de las celdas */
+td button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Botón de editar */
+.edit-btn {
+  background-color: #5a5a5a;
+  color: #ffffff;
+}
+
+.edit-btn:hover {
+  background-color: #1976D2;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+  background-color: #c43d33;
+  color: #ffffff;
+}
+
+.delete-btn:hover {
+  background-color: #D32F2F;
+}
+
+/* Botón deshabilitado */
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+  table {
+      width: 80%; /* Más ancho en pantallas pequeñas */
+  }
+
+  th, td {
+      font-size: 0.9rem;
+  }
+
+  td button {
+      padding: 10px 20px;
+      font-size: 0.8rem;
+  }
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
